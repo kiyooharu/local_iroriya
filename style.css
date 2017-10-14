@@ -1,0 +1,159 @@
+food/*
+Template:sydney
+Theme Name:sydney_child
+*/
+
+body, img, div, p, ul, li, h1, h2, h3{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.line_h24{
+  line-height: 24px;
+}
+/*幅*/
+.width_25p{
+	width: 25%;
+}
+.width_30p{
+	width: 30%;
+}
+.width_50p{
+	width: 50%;
+}
+.width_100p{
+	width: 100%;
+}
+/*横位置*/
+.flt_l{
+	float: left;
+}
+/*文字横位置*/
+.text_c{
+	text-align: center;
+}
+/*文字サイズ*/
+.font_sz12p{
+	font-size: 12px;
+}
+.font_sz14p{
+  font-size: 14px;
+}
+.font_sz16p{
+  font-size: 16px;
+}
+
+/*解除*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*各間*/
+.back_stop {
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    background-image: url(/iroriya/wp-content/uploads/2017/03/food_back.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 180px 0px 180px 0px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+/*h2テキスト間隔*/
+.pa_20p{
+    padding: 20px 30px;
+}
+.pa_30p{
+    padding: 30px 30px;
+}
+.pa_t50b0p{
+    padding: 50px 0px 0px 0px;
+}
+.pa_50p{
+    padding: 50px 0px;
+}
+/*タイトル下ライン*/
+.border_line{
+  border-bottom: solid 1px #ddd;
+  width: 30%;
+  text-align: center;
+  margin: 20px auto;
+}
+/*top.html/info*/
+.info_bs {
+  background: #525050;
+  color: #fff;
+  padding: 10px 0px 10px 0px;
+  width: 50%;
+  margin: 0px 40px 0px 40px;
+}
+.line_h43{
+  line-height: 43px;
+}
+.ma_5_p{
+  margin: 5px auto;
+}
+#food h3{
+  padding: 15px 0px;
+}
+#drink h3{
+  padding: 15px 0px;
+}
+#ibent h3{
+  padding: 15px 0px;
+}
+#greeting h3{
+  padding: 15px 0px;
+}
+.page-wrap {
+    padding-top: 0px !important;
+}
+
+/*food*/
+.picup_position{
+  position: relative;
+}
+.picup_p{
+  position: absolute;
+}
+.picup_style {
+    top: -15px;
+    right: 5px;
+    background: #E21B77;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+#food img{
+  width:100%;
+}
+.height_32p{
+  height: 320px;
+}
+/*food*/
+
+/*drink*/
+#drink img{
+  width:100%;
+}
+/*drink*/
+
+/*ibent*/
+#ibent img{
+  width:100%;
+}
+/*ibent*/
+
+
+
