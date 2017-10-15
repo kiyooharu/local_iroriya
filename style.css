@@ -28,10 +28,11 @@ body, img, div, p, ul, li, h1, h2, h3{
 .flt_l{
 	float: left;
 }
-/*文字横位置*/
-.text_c{
-	text-align: center;
+.dis_inline{
+  display: inline-block;
 }
+/*文字横位置*/
+
 /*文字サイズ*/
 .font_sz12p{
 	font-size: 12px;

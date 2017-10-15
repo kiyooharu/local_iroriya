@@ -12,7 +12,7 @@ get_header(); ?>
 
 <!--お知らせ-->
 
-<h2 class="text_c pa_50p line_h24" id="info"><?php the_field('info_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="info"><?php the_field('info_title',74); ?><br>
 
 <span class="font_sz12p">お知らせ</span>
 
@@ -25,8 +25,8 @@ while($loop->have_posts()): $loop->the_post(); ?>
 	<div class="clearfix flt_l width_100p">
 		<div id=”post-<?php the_ID(); ?>” class="clearfix ma_5_p">
 			<ul class="flt_l width_30p clearfix">
-				<li class="flt_l text_c line_h43"><?php the_time('Y/m/d'); ?></li>
-				<li class="flt_l text_c info_bs"><?php the_field('info'); ?></li>
+				<li class="flt_l text-center line_h43"><?php the_time('Y/m/d'); ?></li>
+				<li class="flt_l text-center info_bs"><?php the_field('info'); ?></li>
 			</ul>
 			<ul class="flt_l width_50p">
 				<li><h3 class="font_sz12p line_h43"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3></li>
@@ -65,7 +65,7 @@ And prepared a variety of events for everyone .</p>
 
 <div class="row">
 
-<h2 class="text_c pa_50p line_h24"><?php the_field('food_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24"><?php the_field('food_title',74); ?><br>
 
 <span class="font_sz12p">食べ物</span>
 
@@ -75,8 +75,8 @@ And prepared a variety of events for everyone .</p>
 
 <?php $loop = new WP_Query(array("post_type" => "food", "posts_per_page" => 6 ));
 while($loop->have_posts()): $loop->the_post(); ?>
-<div class="clearfix flt_l width_25p pa_20p">
-	<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p">
+<div class="clearfix pa_20p dis_inline col-md-3 col-sm-6 col-xs-12">
+	<div id=”post-<?php the_ID(); ?>” class="picup_position">
 		<?php the_post_thumbnail( array(200,auto) ); ?>
 		<p><?php the_time('Y/m/d'); ?></p>
 		<h3 class="font_sz16p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -108,7 +108,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text_c pa_50p line_h24"><?php the_field('drink_title',74); ?><br>
+<h2 class="text-cener pa_50p line_h24"><?php the_field('drink_title',74); ?><br>
 
 <span class="font_sz12p">飲み物</span>
 
@@ -118,7 +118,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <?php $loop = new WP_Query(array("post_type" => "drink", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
-<div class="clearfix flt_l width_25p pa_20p">
+<div class="clearfix pa_20p dis_inline col-md-3 col-sm-6 col-xs-12">
 <div id=”post-<?php the_ID(); ?>” class="picup_position height_32p">
 	<?php the_post_thumbnail( array(200,auto) ); ?>
 	<p><?php the_field('new drink'); ?></p>
@@ -158,7 +158,7 @@ And prepared a variety of events for everyone .</p>
 
 <div class="row">
 
-<h2 class="text_c pa_50p line_h24"><?php the_field('ibent_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24"><?php the_field('ibent_title',74); ?><br>
 
 <span class="font_sz12p">イベント</span>
 
@@ -196,7 +196,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text_c pa_50p line_h24"><?php the_field('greet_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24"><?php the_field('greet_title',74); ?><br>
 
 <span class="font_sz12p">あいさつ</span>
 
@@ -234,7 +234,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text_c pa_50p line_h24"><?php the_field('access_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24"><?php the_field('access_title',74); ?><br>
 
 <span class="font_sz12p">あくせす</span>
 
