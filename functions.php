@@ -7,7 +7,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 //概要（抜粋）の文字数調整
 function my_excerpt_length($length) {
-	return 200;
+	return 80;
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 

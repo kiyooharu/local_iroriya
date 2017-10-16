@@ -108,7 +108,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-cener pa_50p line_h24"><?php the_field('drink_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24"><?php the_field('drink_title',74); ?><br>
 
 <span class="font_sz12p">飲み物</span>
 
@@ -168,8 +168,8 @@ And prepared a variety of events for everyone .</p>
 
 <?php $loop = new WP_Query(array("post_type" => "ibent", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
-<div class="clearfix pa_20p">
-<div id=”post-<?php the_ID(); ?>” class="flt_l width_25p">
+<div class="clearfix pa_20p dis_inline col-md-3 col-sm-6 col-xs-12">
+<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p">
 	<?php the_post_thumbnail( array(200,auto) ); ?>
 	<p><?php the_field('new drink'); ?></p>
 	<h3 class="font_sz12p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -207,11 +207,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <?php $loop = new WP_Query(array("post_type" => "greet", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix width_100p">
-<div id=”post-<?php the_ID(); ?>”>
-	<p><?php the_post_thumbnail( array(200,auto) ); ?></p>
+<div id=”post-<?php the_ID(); ?>” class="pa_10p">
+	<p class="col-md-3"><?php the_post_thumbnail( array(400,auto) ); ?></p>
+	<h3 class="font_sz12p col-md-9 pa_0p pa_10p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+	<p class="col-md-12 pa_10p"><?php the_excerpt(); ?></p>
 	<p><?php the_field('new drink'); ?></p>
-	<h3 class="font_sz12p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-	<?php the_excerpt(); ?>
 </div>
 </div>
 

@@ -28,16 +28,14 @@
 
 		<div class="container content-wrapper">
 			<div class="row">	
-
-    <div id="footer-menu">
-    <?php dynamic_sidebar('フッター１'); ?>
-	</div>
-
-	</div>
-	</div>
+			    <div id="footer-menu">
+			    <?php dynamic_sidebar('フッター１'); ?>
+				</div>
+			</div>
+		</div>
 
 		<div class="site-info container">
-			<p class="text_c">© 2015 IRORIYA inc.</p>
+			<p class="text_c">© 2017 IRORIYA inc.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

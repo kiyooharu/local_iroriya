@@ -44,6 +44,12 @@ body, img, div, p, ul, li, h1, h2, h3{
   font-size: 16px;
 }
 
+/*font*/
+.maintitle{
+font-family: 'Lustria', serif;
+font-family: 'Trirong', serif;
+}
+
 /*解除*/
 .clearfix:after {
   content: ".";
@@ -71,6 +77,9 @@ body, img, div, p, ul, li, h1, h2, h3{
     border-bottom: 1px solid #dddddd;
 }
 /*h2テキスト間隔*/
+.pa_10p{
+    padding: 10px 0px;
+}
 .pa_20p{
     padding: 20px 30px;
 }
@@ -82,6 +91,9 @@ body, img, div, p, ul, li, h1, h2, h3{
 }
 .pa_50p{
     padding: 50px 0px;
+}
+.pa_0p{
+    padding-left:0px;
 }
 /*タイトル下ライン*/
 .border_line{
@@ -155,6 +167,3 @@ body, img, div, p, ul, li, h1, h2, h3{
   width:100%;
 }
 /*ibent*/
-
-
-
