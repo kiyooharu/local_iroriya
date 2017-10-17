@@ -44,10 +44,18 @@ body, img, div, p, ul, li, h1, h2, h3{
   font-size: 16px;
 }
 
+/*カラー*/
+.color_cd{
+  background: #ddd;
+}
+.color_cf{
+  color:#fff !important;
+}
+
 /*font*/
 .maintitle{
-font-family: 'Lustria', serif;
-font-family: 'Trirong', serif;
+  font-family: 'Lustria', serif;
+  font-family: 'Trirong', serif;
 }
 
 /*解除*/
@@ -76,7 +84,34 @@ font-family: 'Trirong', serif;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
 }
+.back_greet {
+    color: #fff;
+    background-image: url(/iroriya/wp-content/uploads/2017/10/main_003-1.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: repeat-x;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
 /*h2テキスト間隔*/
+.pa_10_10p{
+    padding: 10px;
+}
+.pa_0_10p{
+    padding: 0px 10px;
+}
+.pa_10_20p {
+    padding: 5px 10px 0px 10px;
+    margin: 10px 0px;
+}
+.bo_sd1p{
+    border: solid 1px #ddd;
+}
 .pa_10p{
     padding: 10px 0px;
 }
@@ -94,6 +129,9 @@ font-family: 'Trirong', serif;
 }
 .pa_0p{
     padding-left:0px;
+}
+.back_cb {
+    background: #f9f8f8;
 }
 /*タイトル下ライン*/
 .border_line{
@@ -152,7 +190,7 @@ font-family: 'Trirong', serif;
   width:100%;
 }
 .height_32p{
-  height: 320px;
+  height: auto;
 }
 /*food*/
 

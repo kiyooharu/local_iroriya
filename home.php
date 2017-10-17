@@ -100,7 +100,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--食べ物-->
 
-
+<div class="back_cb">
 
 <!--飲み物-->
 
@@ -140,6 +140,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--飲み物-->
 
+</div>
 
 <!--間隔-->
 
@@ -189,6 +190,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 </div>
 <!--イベント-->
 
+<div class="back_greet">
 
 <!--あいさつ-->
 
@@ -196,11 +198,11 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24"><?php the_field('greet_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24 color_cf"><?php the_field('greet_title',74); ?><br>
 
-<span class="font_sz12p">あいさつ</span>
+<span class="font_sz12p color_cf">あいさつ</span>
 
-<div class="border_line"></div>
+<div class="border_line color_cf"></div>
 
 </h2>
 
@@ -208,10 +210,25 @@ while($loop->have_posts()): $loop->the_post(); ?>
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix width_100p">
 <div id=”post-<?php the_ID(); ?>” class="pa_10p">
-	<p class="col-md-3"><?php the_post_thumbnail( array(400,auto) ); ?></p>
-	<h3 class="font_sz12p col-md-9 pa_0p pa_10p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-	<p class="col-md-12 pa_10p"><?php the_excerpt(); ?></p>
-	<p><?php the_field('new drink'); ?></p>
+	<ul class="col-md-3 col-sm-6x col-xs-12">
+		<li><p>
+		<?php the_post_thumbnail( array(400,auto) ); ?></p>
+		</li>
+	</ul>
+	<ul class="col-md-9 col-sm-6x col-xs-12">
+		<li>
+		<h3 class="font_sz12p pa_10_10p color_cd"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+		</li>
+		<li class="pa_10_20p">
+		<p><strong><?php the_field('name'); ?></strong></p>
+		</li>
+		<li class="pa_0_10p">
+		<p><?php the_field('cathf'); ?></p>
+		</li>
+		<li class="pa_10_20p bo_sd1p">
+		<?php the_excerpt(); ?>
+		</li>
+	</ul>
 </div>
 </div>
 
@@ -227,6 +244,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--あいさつ-->
 
+</div>
 
 <!--あくせす-->
 
