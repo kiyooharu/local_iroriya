@@ -25,6 +25,26 @@
 <?php endif; ?>
 
 <?php wp_head(); ?>
+
+<!--アニメーション-->
+<script>
+jQuery(function(){
+jQuery('#animation,#animation_b,#animation_c,#animation_d,#animation_e,#animation_f').css('visibility','hidden');
+jQuery(window).scroll(function(){
+ var windowHeight = jQuery(window).height(),
+     topWindow = jQuery(window).scrollTop();
+ jQuery('#animation,#animation_b,#animation_c,#animation_d,#animation_e,#animation_f').each(function(){
+  var targetPosition = jQuery(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   jQuery(this).addClass("fadeInDown");
+  }
+ });
+});
+});
+</script>
+
+<!--アニメーション-->
+
 </head>
 
 <body <?php body_class(); ?> id="home">

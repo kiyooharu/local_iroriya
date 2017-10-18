@@ -12,7 +12,7 @@ get_header(); ?>
 
 <!--お知らせ-->
 
-<h2 class="text-center pa_50p line_h24" id="info"><?php the_field('info_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="info animation"><?php the_field('info_title',74); ?><br>
 
 <span class="font_sz12p">お知らせ</span>
 
@@ -65,7 +65,7 @@ And prepared a variety of events for everyone .</p>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24"><?php the_field('food_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="animation_b"><?php the_field('food_title',74); ?><br>
 
 <span class="font_sz12p">食べ物</span>
 
@@ -108,7 +108,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24"><?php the_field('drink_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="animation_c"><?php the_field('drink_title',74); ?><br>
 
 <span class="font_sz12p">飲み物</span>
 
@@ -159,7 +159,7 @@ And prepared a variety of events for everyone .</p>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24"><?php the_field('ibent_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="animation_d"><?php the_field('ibent_title',74); ?><br>
 
 <span class="font_sz12p">イベント</span>
 
@@ -198,7 +198,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24 color_cf"><?php the_field('greet_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24 color_cf" id="animation_e"><?php the_field('greet_title',74); ?><br>
 
 <span class="font_sz12p color_cf">あいさつ</span>
 
@@ -252,7 +252,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24"><?php the_field('access_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="animation_f"><?php the_field('access_title',74); ?><br>
 
 <span class="font_sz12p">あくせす</span>
 
