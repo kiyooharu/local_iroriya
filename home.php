@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24" id="info><?php the_field('info_title',74); ?><br>
+<h2 class="text-center pa_50p line_h24" id="animation_a"><?php the_field('info_title',74); ?><br>
 
 <span class="font_sz12p">お知らせ</span>
 
@@ -79,7 +79,7 @@ And prepared a variety of events for everyone .</p>
 <?php $loop = new WP_Query(array("post_type" => "food", "posts_per_page" => 6 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix pa_201p dis_inline col-md-3 col-sm-6 col-xs-12">
-	<div id=”post-<?php the_ID(); ?>” class="picup_position">
+	<div id=”post-<?php the_ID(); ?>” class="picup_position food_mw">
 		<?php the_post_thumbnail( array(200,auto) ); ?>
 		<p><?php the_time('Y/m/d'); ?></p>
 		<h3 class="font_sz16p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -122,7 +122,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <?php $loop = new WP_Query(array("post_type" => "drink", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix pa_201p dis_inline col-md-3 col-sm-6 col-xs-12">
-<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p">
+<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p drink_mw">
 	<?php the_post_thumbnail( array(200,auto) ); ?>
 	<p><?php the_field('new drink'); ?></p>
 	<h3 class="font_sz12p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -173,7 +173,7 @@ And prepared a variety of events for everyone .</p>
 <?php $loop = new WP_Query(array("post_type" => "ibent", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix pa_201p dis_inline col-md-3 col-sm-6 col-xs-12">
-<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p">
+<div id=”post-<?php the_ID(); ?>” class="picup_position height_32p ibent_mw">
 	<?php the_post_thumbnail( array(200,auto) ); ?>
 	<p><?php the_field('new drink'); ?></p>
 	<h3 class="font_sz12p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -212,10 +212,10 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <?php $loop = new WP_Query(array("post_type" => "greet", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix width_100p">
-<div id=”post-<?php the_ID(); ?>” class="pa_10p clearfix greet_sp">
+<div id=”post-<?php the_ID(); ?>” class="pa_10p clearfix greet_sp greet_mw">
 	<ul class="col-lg-3 col-md-6 col-sm-6 col-xs-6 greet">
-		<li><p>
-		<?php the_post_thumbnail( array(400,auto) ); ?></p>
+		<li>
+		<?php the_post_thumbnail( array(400,auto) ); ?>
 		</li>
 	</ul>
 	<ul class="col-lg-9 col-md-6 col-sm-6 col-xs-6">
@@ -255,7 +255,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <div class="row">
 
-<h2 class="text-center pa_50p line_h24" id="animation_f"><?php the_field('access_title',74); ?><br>
+<h2 class="text-center pa_0p_50p line_h24" id="animation_f"><?php the_field('access_title',74); ?><br>
 
 <span class="font_sz12p">あくせす</span>
 
@@ -266,11 +266,26 @@ while($loop->have_posts()): $loop->the_post(); ?>
 <?php $loop = new WP_Query(array("post_type" => "access", "posts_per_page" => 8 ));
 while($loop->have_posts()): $loop->the_post(); ?>
 <div class="clearfix flt_l width_100p">
-<div id=”post-<?php the_ID(); ?>”>
-	<p><?php the_post_thumbnail( array(200,auto) ); ?></p>
-	<p><?php the_field(''); ?></p>
-	<h3 class="font_sz12p"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-	<?php the_excerpt(); ?>
+<div class="row">
+<div id=”post-<?php the_ID(); ?>” class="col-xs-12">
+	<h3 class="font_sz20p pa_30pb access_mw">
+		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+	</h3>
+	<table class="type01 access_mw" border="0">
+		<tr>
+			<th scope="row">住所</th>
+			<td>東京都港区1-3-24</td>
+		</tr>
+		<tr>
+			<th scope="row">TEL</th>
+			<td>06-444-5555</td>
+		</tr>
+		<tr>
+			<th scope="row">最寄り駅</th>
+			<td>地下鉄線　銀座駅</td>
+		</tr>
+	</table>
+</div>
 </div>
 
 </div>
@@ -288,7 +303,7 @@ while($loop->have_posts()): $loop->the_post(); ?>
 
 <!--あくせす-->
 
-<div class="pa_50p">
+<div>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51862.552297288355!2d139.657520793264!3d35.666917187437214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb2eb3108d1%3A0xf11cd9b2395b6677!2z5p2x5Lqs6YO95riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1491233689396" width="100%" height="300px" frameborder="0" style="border:0; border: 0; pointer-events:none;" allowfullscreen></iframe>
 

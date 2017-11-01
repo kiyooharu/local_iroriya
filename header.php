@@ -33,7 +33,7 @@ jQuery('#animation,#animation_b,#animation_c,#animation_d,#animation_e,#animatio
 jQuery(window).scroll(function(){
  var windowHeight = jQuery(window).height(),
      topWindow = jQuery(window).scrollTop();
- jQuery('#animation,#animation_b,#animation_c,#animation_d,#animation_e,#animation_f').each(function(){
+ jQuery('#animation_a,#animation_b,#animation_c,#animation_d,#animation_e,#animation_f').each(function(){
   var targetPosition = jQuery(this).offset().top;
   if(topWindow > targetPosition - windowHeight + 100){
    jQuery(this).addClass("fadeInDown");

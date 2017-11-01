@@ -1,0 +1,83 @@
+
+
+@media screen and (max-width: 900px) {
+ul.flt_l.width_30p.clearfix{
+	text-align: left;
+}
+ul.flt_l.width_50p{
+  	width:100%;
+  	text-align: left;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+li.flt_l.text-center.info_bs.col-lg-6.col-md-3.col-sm-6{
+	margin:0px;
+}
+.greet li{
+	text-align: center;
+}
+}
+
+@media screen and (max-width: 991px) {
+li.flt_l.text-center.info_bs.col-lg-6.col-md-3.col-sm-6{
+	margin:0px;
+}
+li.flt_l.text-center.line_h43.col-lg-3.col-md-3.col-sm-5{
+	text-align: left;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+ul.flt_l.col-lg-5.col-md-6.col-sm-12.col-xs-12.clearfix{
+  	padding-left:0px;
+    padding-right:0px;
+}
+ul.flt_l.col-lg-6.col-md-6.col-sm-12.col-xs-12{
+  	padding-left:0px;
+    padding-right:0px;
+}
+.greet_sp{
+	padding:0px !important;
+}
+.pa_201p {
+    padding: 20px 0px !important;
+}
+.row{
+	margin: 10px 0px;
+}
+.header-wrap .row{
+  margin:0px;
+}
+#mainnav-mobi ul li {
+  text-align:center;
+}
+ul.col-lg-3.col-md-6.col-sm-6.col-xs-6.greet{
+  padding-left: 0px;
+}
+.header-wrap .container{
+  padding: 0px;
+}
+.food_mw{
+  width:90%;
+  margin: 0 auto;
+}
+.drink_mw{
+  width:90%;
+  margin: 0 auto;
+}
+.ibent_mw{
+  width:90%;
+  margin: 0 auto;
+}
+.greet_mw{
+  width:90%;
+  margin: 0 auto;
+}
+.access_mw{
+  width:90%;
+  margin: 0 auto;
+}
+}

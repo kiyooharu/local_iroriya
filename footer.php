@@ -22,12 +22,10 @@
 
     <a class="go-top"><i class="fa fa-angle-up"></i></a>
 
-
-		
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<div class="container content-wrapper">
-			<div class="row">	
+			<div class="row">
 			    <div id="footer-menu">
 			    <?php dynamic_sidebar('フッター１'); ?>
 				</div>
@@ -35,7 +33,7 @@
 		</div>
 
 		<div class="site-info container">
-			<p class="text_c">© 2017 IRORIYA inc.</p>
+			<p class="text-center">© 2017 IRORIYA inc.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 

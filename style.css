@@ -31,12 +31,8 @@ body, img, div, p, ul, li, h1, h2, h3{
   padding:0px;
 }
 ul.col-lg-3.col-md-6.col-sm-6.col-xs-6.greet{
-  padding-left:15px;
-  padding-right:15px;
-}
-.container{
   padding-left:0px;
-  padding-right:0px;
+  padding-right:15px;
 }
 
 /*横位置*/
@@ -57,6 +53,9 @@ ul.col-lg-3.col-md-6.col-sm-6.col-xs-6.greet{
 }
 .font_sz16p{
   font-size: 16px;
+}
+.font_sz20p{
+  font-size: 20px;
 }
 
 /*カラー*/
@@ -139,11 +138,17 @@ ul.col-lg-3.col-md-6.col-sm-6.col-xs-6.greet{
 .pa_30p{
     padding: 30px 30px;
 }
+.pa_30pb{
+    padding: 30px 0px 30px 0px;
+}
 .pa_t50b0p{
     padding: 50px 0px 0px 0px;
 }
 .pa_50p{
     padding: 50px 0px;
+}
+.pa_0p_50p {
+    padding: 50px 0px 0px;
 }
 .pa_0p{
     padding-left:0px;
@@ -224,6 +229,14 @@ ul.col-lg-3.col-md-6.col-sm-6.col-xs-6.greet{
 
 /*greet*/
 div#”post-87” img {
+    padding: 5px;
+    border: solid 1px #ddd;
+}
+div#”post-88” img {
+    padding: 5px;
+    border: solid 1px #ddd;
+}
+div#”post-89” img {
     padding: 5px;
     border: solid 1px #ddd;
 }
